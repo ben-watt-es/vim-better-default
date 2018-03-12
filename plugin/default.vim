@@ -47,9 +47,9 @@ set smartcase      " ... but case sensitive when uc present
 set scrolljump=5   " Line to scroll when cursor leaves screen
 set scrolloff=3    " Minumum lines to keep above and below cursor
 set nowrap         " Do not wrap long lines
-set shiftwidth=4   " Use indents of 4 spaces
-set tabstop=4      " An indentation every four columns
-set softtabstop=4  " Let backspace delete indent
+set shiftwidth=2   " Use indents of 2 spaces
+set tabstop=2      " An indentation every two columns
+set softtabstop=2  " Let backspace delete indent
 set splitright     " Puts new vsplit windows to the right of the current
 set splitbelow     " Puts new split windows to the bottom of the current
 set autowrite      " Automatically write a file when leaving a modified buffer
@@ -73,7 +73,7 @@ end
 set t_ut=
 
 set winminheight=0
-set wildmode=list:longest,full
+set wildmode=full " Use the less obstructive menu
 
 set listchars=tab:→\ ,eol:↵,trail:·,extends:↷,precedes:↶
 
@@ -258,12 +258,12 @@ endif
     " Buffer {
       if !exists('g:vim_better_default_buffer_key_mapping') ||
             \ g:vim_better_default_buffer_key_mapping
-        nnoremap <Leader>bp :bprevious<CR>
-        nnoremap <Leader>bn :bnext<CR>
-        nnoremap <Leader>bf :bfirst<CR>
-        nnoremap <Leader>bl :blast<CR>
-        nnoremap <Leader>bd :bd<CR>
-        nnoremap <Leader>bk :bw<CR>
+        nnoremap <Leader><TAB>j :bprevious<CR>
+        nnoremap <Leader><TAB>k :bnext<CR>
+        nnoremap <Leader><TAB>h :bfirst<CR>
+        nnoremap <Leader><TAB>l :blast<CR>
+        nnoremap <Leader><TAB>d :bd<CR>
+        nnoremap <Leader><TAB>w :bw<CR>        
       endif
     " }
 
