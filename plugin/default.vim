@@ -64,7 +64,7 @@ set matchtime=5    " Show matching time
 set report=0       " Always report changed lines
 set linespace=0    " No extra spaces between rows
 set pumheight=20   " Avoid the pop up menu occupying the whole screen
-set expandtab    " Tabs are spaces, not tabs
+set expandtab      " Tabs are spaces, not tabs
 
 " http://stackoverflow.com/questions/6427650/vim-in-tmux-background-color-changes-when-paging/15095377#15095377
 set t_ut=
@@ -259,7 +259,7 @@ endif
         nnoremap <Leader><TAB>k :bnext<CR>
         nnoremap <Leader><TAB>h :bfirst<CR>
         nnoremap <Leader><TAB>l :blast<CR>
-        nnoremap <Leader><TAB>d :bd<CR>
+        nnoremap <Leader><TAB>d :bd!<CR>
         nnoremap <Leader><TAB>w :bw<CR>        
       endif
     " }
