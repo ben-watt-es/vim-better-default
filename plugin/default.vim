@@ -131,7 +131,7 @@ if !exists('g:vim_better_default_enable_folding') ||
   set foldenable
   set foldmarker={,}
   set foldlevel=0
-  set foldmethod=syntax
+  set foldmethod=indent
   " set foldcolumn=3
   set foldlevelstart=99
 endif
